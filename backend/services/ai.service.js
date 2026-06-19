@@ -17,14 +17,13 @@
 // });
 // ====================================================================
 
-// ============== GROQ IMPLEMENTATION (ACTIVE) ==============
+// ============== OPENAI IMPLEMENTATION (ACTIVE) ==============
 import OpenAI from "openai";
 import dotenv from "dotenv";
 dotenv.config();
 
 const client = new OpenAI({
-  apiKey: process.env.Groq_API_KEY,
-  baseURL: "https://api.groq.com/openai/v1",
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 // System instruction (same as Gemini)
@@ -212,9 +211,9 @@ export const generateResult = async (prompt) => {
   try {
     console.log("AI received prompt:", prompt);
 
-    // ============== GROQ IMPLEMENTATION (ACTIVE) ==============
+    // ============== OPENAI IMPLEMENTATION (ACTIVE) ==============
     const response = await client.chat.completions.create({
-      model: "llama-3.3-70b-versatile",
+      model: "gpt-4o-mini",
       messages: [
         {
           role: "system",
