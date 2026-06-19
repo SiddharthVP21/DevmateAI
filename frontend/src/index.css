@@ -1,0 +1,26 @@
+/* Main CSS file - imports all modular stylesheets */
+
+/* Base styles and variables */
+@import './styles/base.css';
+
+/* Animations */
+@import './styles/animations.css';
+
+/* Page styles */
+@import './styles/pages/home.css';
+@import './styles/pages/Project.css';
+@import './styles/pages/Landing.css';
+@import './styles/pages/login.css';
+@import './styles/pages/signup.css';
+@import './styles/pages/forget-password.css';
+@import './styles/pages/resetpassword.css';
+
+/* Component styles */
+@import './styles/components/FileExplorer.css';
+@import './styles/components/SidePanel.css';
+@import './styles/components/AddUserPopUp.css';
+@import './styles/components/ChatPanel.css';
+@import './styles/components/CodeEditor.css';
+@import './styles/components/FileVersionList.css';
+@import './styles/components/SyntaxHighlightedCode.css';
+@import './styles/components/VersionSelector.css';
